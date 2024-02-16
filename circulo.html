@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Área do Círculo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 300px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Calculadora de Área do Círculo</h2>
+    <label for="raio">Digite o valor do raio do círculo:</label>
+    <input type="number" id="raio" placeholder="Digite o valor do raio do círculo">
+    <button onclick="calcularArea()">Calcular Área</button>
+    <p id="resultado"></p>
+</div>
+
+
+
+</body>
+</html>

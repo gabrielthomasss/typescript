@@ -21,13 +21,26 @@ class Contas{
         this.tipo = tipo;
         this.historico = historico;
   }
+  mostrarDados(){
+     console.log('Dados de Contas:')
+     console.log(`Saldo: ${this.saldo}`)
+     console.log(`CPF: ${this.cpf}`)
+     console.log(`E-mail: ${this.email}`)
+     console.log(`Telefone: ${this.telefone}`)
+     console.log(`Senha: ${this.senha}`)
+     console.log(`Tipo: ${this.tipo}`)
+     console.log(`Historico: ${this.historico}`)
 
+
+
+
+  }
 
 }
 
 const contas1 = new Contas('558','56773745656','gab@gmail.com','67574755','568390','corrente','controlado')
 
-console.log(contas1)
+console.log(contas1.mostrarDados())
 
 
 //Controle de Despesas e Receitas:
@@ -47,12 +60,23 @@ class Despesas{
         this.gastos = gastos;
         this.relatorios = relatorios;
  }
-    
+   mostrarDados(){
+      console.log('Dados de Despesas:')
+      console.log(`Registro: ${this.registro}`)
+      console.log(`Receitas: ${this.receitas}`)
+      console.log(`Categoria: ${this.categoria}`)
+      console.log(`Gastos: ${this.gastos}`)
+      console.log(`Relatorios: ${this.relatorios}`)
+
+
+
+
+   } 
 }
 
 const despesas1 = new Despesas('56478','455433','lojas','35456377','compras')
 
-console.log(despesas1)
+console.log(despesas1.mostrarDados())
 
 //Planejamento Financeiro:
 //• Funcionalidade para estabelecer metas financeiras, como economizar para uma viagem ou
@@ -69,9 +93,18 @@ class Planejamento{
          this.metas = metas;
          this.economia = economia;
           }
+     mostrarDados(){
+       console.log('Dados do Planejamento:')
+       console.log(`Progresso: ${this.progresso}`)
+       console.log(`Dividas: ${this.dividas}`)
+       console.log(`Metas: ${this.metas}`)
+       console.log(`Economia: ${this.economia}`)
 
+
+
+     }
 }
 
 const planejamento1 = new Planejamento('otimo','sem dividas','muitas','na medida')
 
-console.log(planejamento1)
+console.log(planejamento1.mostrarDados())

@@ -21,12 +21,24 @@ class Projetos{
      this.progresso = progresso;
 
 }
+ mostrarDados(){
+     console.log('Dados do Projeto:')
+     console.log(`Descrição: ${this.descricao}`)
+     console.log(`Andamento: ${this.andamento}`)
+     console.log(`Equipe: ${this.equipe}`)
+     console.log(`Nome: ${this.nome}`)
+     console.log(`Prazos: ${this.prazos}`)
+     console.log(`Progresso: ${this.progresso}`)
+
+
+
+ }
 
 }
 
 const projeto1 = new Projetos('olá pessoas','em andamento','construção','avanço', new Date('2025-06-9'),'bem avançado' )
 
-console.log(projeto1)
+console.log(projeto1.mostrarDados())
 
 //Controle de Tarefas:
 //• Divisão de projetos em tarefas individuais, com atribuição de responsáveis e prazos para
@@ -44,12 +56,23 @@ class Tarefas{
         this.prazos = prazos;
         this.status = status;
      }
+     mostrarDados(){
+        console.log('Dados de Tarefas:')
+        console.log(`Tarefas: ${this.tarefas}`)
+        console.log(`Atribuições: ${this.atribuicao}`)
+        console.log(`Prazos: ${this.prazos}`)
+        console.log(`Status: ${this.status}`)
 
+
+
+
+
+     }
 }
 
 const tarefas1 = new Tarefas('construir','mais construções', new Date('2026-03-8'),'em andamento')
 
-console.log(tarefas1)
+console.log(tarefas1.mostrarDados())
 
 //Comunicação Interna:
 //• Facilidade para comunicação entre os membros da equipe de cada projeto, através de
@@ -65,9 +88,17 @@ class Comunicação{
        this.registro = registro;
        this.projeto = projeto;
 }
+  mostrarDados(){
+     console.log('Dados da Comunicação:')
+     console.log(`Comunicação: ${this.comunicacao}`)
+     console.log(`Registro: ${this.registro}`)
+     console.log(`Projeto: ${this.projeto}`)
 
+
+
+  }
 }
 
 const comunicacao1 = new Comunicação('Olá Pessoal','544665','Quase Pronto')
 
-console.log(comunicacao1)
+console.log(comunicacao1.mostrarDados())

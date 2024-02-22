@@ -4,7 +4,27 @@
 // Registro de projetos em andamento, incluindo informações como nome, descrição e equipe
 //responsável.
 //• Acompanhamento do progresso de cada projeto, com a definição de marcos e prazos. 
+class Empresa {
+    
+    constructor(
+         public cnpj: string,
+         public nome: string,
+         public telefone: string,
+         public email: string,
+         public local: string){
 
+    }
+    mostrarDados(){
+      console.log('Dados da Empresa:')
+      console.log(`CNPJ: ${this.cnpj}`)
+      console.log(`Nome: ${this.nome}`)
+      console.log(`Telefone: ${this.telefone}`)
+      console.log(`E-mail: ${this.email}`)
+      console.log(`Local: ${this.local}`)
+
+    }
+
+}
 class Projetos {
 
    constructor(

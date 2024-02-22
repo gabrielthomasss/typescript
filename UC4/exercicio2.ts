@@ -1,7 +1,18 @@
 //Cadastro de Livros:
 //• Detalhes sobre cada livro, incluindo título, autor, editora e categoria.
 //• Registro da quantidade de cópias disponíveis de cada livro. 
+class Biblioteca{
 
+
+
+
+
+
+
+
+
+   
+}
 class Livro {
 
    constructor(
